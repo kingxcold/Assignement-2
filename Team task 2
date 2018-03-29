@@ -1,0 +1,33 @@
+#include <iostream>
+#include <cmath>
+
+
+using namespace std;
+
+int main()
+{
+ int k;
+ float expo,t,x,i,z,factorial=1;
+ cout<<"enter a number: ";
+ cin>>x;
+ cout<<endl;
+ cout<<endl;
+ cout<<"e^x= "<<exp(x)<<endl;
+ cout<<endl;
+ cout<<endl;
+ expo=1+(pow(x,i)/(factorial));
+ cout<<expo<<"   ";
+ for (i=0; i<=x; i++){
+        expo=1+(pow(x,i)/(factorial));
+        for(k=1;k<=100;k+=10){
+            for(i=2;i<=11;i++){
+        factorial=factorial*i;
+        t=(pow(x,i)/(factorial));
+        expo=expo+t;
+        cout<<expo<<" ";
+
+        }
+        }
+
+}
+}
