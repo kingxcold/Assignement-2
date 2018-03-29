@@ -1,0 +1,145 @@
+#include <iostream>
+#include <string>
+#include <string.h>
+using namespace std;
+
+int main(){
+    string text;
+    int leng;
+    int len;
+    int x;
+    string morse;
+
+
+    cout<<"1)Encrypt to morse"<<endl;
+    cout<<"2)Decrypt from morse"<<endl;
+    cout<<"3)quit"<<endl;
+    cout<<"Your input: ";
+    cin>>x;
+    switch(x){
+        case 1:{
+
+        cout<<"enter text:"<<endl;
+        cin.ignore();
+        getline(cin,text);
+        len=text.length();
+
+        for(int i=0;i<=len;i++){
+
+        if(text[i]=='a'||text[i]=='A'){
+            cout<<".-"<<" ";
+        }
+        else if(text[i]=='b'||text[i]=='B'){
+            cout<<"-..."<<" ";
+        }
+        else if(text[i]=='c'||text[i]=='C'){
+            cout<<"-.-."<<" ";
+        }
+        else if(text[i]=='d'||text[i]=='D'){
+            cout<<"-.."<<" ";
+        }
+        else if(text[i]=='e'||text[i]=='E'){
+            cout<<"."<<" ";
+        }
+        else if(text[i]=='f'||text[i]=='F'){
+            cout<<"..-"<<" ";
+
+        }
+        else if(text[i]=='g'||text[i]=='G'){
+            cout<<"--."<<" ";
+        }
+        else if(text[i]=='h'||text[i]=='H'){
+            cout<<"...."<<" ";
+        }
+        else if(text[i]=='i'||text[i]=='I'){
+            cout<<".."<<" ";
+        }
+        else if(text[i]=='j'||text[i]=='J'){
+            cout<<".---"<<" ";
+        }
+        else if(text[i]=='k'||text[i]=='K')
+        {
+            cout<<"-.-"<<" ";
+        }
+        else if(text[i]=='l'||text[i]=='L'){
+            cout<<".-.."<<" ";
+        }
+        else if(text[i]=='m'||text[i]=='M'){
+                cout<<"--"<<" ";
+
+        }
+        else if(text[i]=='n'||text[i]=='N'){
+            cout<<"-."<<" ";
+        }
+        else if(text[i]=='o'||text[i]=='O'){
+            cout<<"---"<<" ";
+        }
+        else if(text[i]=='p'||text[i]=='P'){
+            cout<<".--."<<" ";
+        }
+        else if(text[i]=='q'||text[i]=='Q'){
+            cout<<"--.-"<<" ";
+        }
+        else if(text[i]=='r'||text[i]=='R'){
+            cout<<".-."<<" ";
+        }
+        else if(text[i]=='s'||text[i]=='S'){
+            cout<<"..."<<" ";
+        }
+        else if(text[i]=='t'||text[i]=='T'){
+            cout<<"-"<<" ";
+        }
+        else if(text[i]=='u'||text[i]=='U'){
+            cout<<"..-"<<" ";
+        }
+        else if(text[i]=='v'||text[i]=='V'){
+            cout<<"...-"<<" ";
+        }
+        else if(text[i]=='w'||text[i]=='W'){
+            cout<<".--"<<" ";
+        }
+        else if(text[i]=='x'||text[i]=='X'){
+            cout<<"-..-"<<" ";
+        }
+        else if(text[i]=='y'||text[i]=='Y'){
+            cout<<"-.--"<<" ";
+        }
+        else if(text[i]=='z'||text[i]=='Z'){
+            cout<<"--.."<<" ";
+        }
+        else if(text[i]==' ')
+            cout<<"   ";
+
+
+     }
+
+
+
+
+    }
+    break;
+        case 2:
+            {
+                cout<<"Enter your text"<<endl;
+                cin.ignore();
+                getline(cin,morse);
+                leng=morse.length();
+                for(int t=0;t<=leng;t++){
+
+
+
+                }
+                break;
+
+
+
+        case 3:
+            break;
+
+            }
+   }
+
+
+
+
+
